@@ -2,15 +2,16 @@
 
 /**
  * @ngdoc overview
- * @name omerHakatonYoApp
+ * @name testAppApp
  * @description
- * # omerHakatonYoApp
+ * # testAppApp
  *
  * Main module of the application.
  */
 angular
-  .module('omerHakatonYoApp', [
+  .module('testAppApp', [
     'ngAnimate',
+    'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',

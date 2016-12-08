@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name omerHakatonYoApp.controller:MainCtrl
+ * @name testAppApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the omerHakatonYoApp
+ * Controller of the testAppApp
  */
-angular.module('omerHakatonYoApp')
+angular.module('testAppApp')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
