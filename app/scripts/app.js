@@ -68,10 +68,20 @@ angular
 })
 
 .controller('adController', ['$scope', function ($scope) {
+        $scope.clickReminder = function(){
+            
+        }
+
         $scope.products = [
             {
-                'img_src': 'graphics\banners\prezzo-AMPM-crembo.png',
+                'id' : 1,
+                'img_src': 'graphics%5Cbanners%5Cprezzo-AMPM-crembo.png',
                 'price'  : 4,
+            },
+            {
+                'id' : 2,
+                'img_src': 'graphics%5Cbanners%5Cprezzo-AMPM-crembo.png',
+                'price'  : 18
             }
         ]
 

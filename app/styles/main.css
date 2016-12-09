@@ -72,13 +72,24 @@ pre                             { margin-bottom:20px; }
 
 /* AD VIEW */
 
+.product-image img{
+    max-width: 100%;
+    max-height: 270px;
+}
+
 .product-reminder{
   background-color: #4eb1cc;
   height: 100px;
   text-align: center;
   padding-top: 10px;
+  font-family: "CaviarDreams", Verdana, Tahoma;
 }
 
 .product-company{
   text-align: center;
+}
+
+@font-face {
+    font-family: "CaviarDreams";
+    src: url(/../graphics/fonts/CaviarDreams.ttf) format("truetype");
 }
