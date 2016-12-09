@@ -1,15 +1,27 @@
-<label>What's Your Console of Choice?</label>
+<label>Choose categories that interest you:</label>
 <div class="form-group">
     <div class="radio">
         <label>
-           <input type="radio" ng-model="formData.type" value="xbox" checked>
-           I like XBOX
+           <input type="radio" ng-model="formData.type" value="supermarkets" checked>
+           Supermarkets
         </label>
     </div>
     <div class="radio">
         <label>
-            <input type="radio" ng-model="formData.type" value="ps">
-            I like PS4
+            <input type="radio" ng-model="formData.type" value="pharmacy">
+            Pharmacy
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" ng-model="formData.type" value="restaurants">
+            Restaurants
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" ng-model="formData.type" value="clothing">
+            Clothing
         </label>
     </div>
 </div>
@@ -17,7 +29,7 @@
 <div class="form-group row">
 <div class="col-xs-6 col-xs-offset-3">
     <a ui-sref="form.payment" class="btn btn-block btn-info">
-    Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    Next <span class="glyphicon glyphicon-circle-arrow-right"></span>
     </a>
 </div>
 </div>
