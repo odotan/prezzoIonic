@@ -4,17 +4,17 @@
 
 <div class="product" ng-repeat="product in products">
     <div class="product-image">
-        <img src="{{ product.img_src }}" height=340px alt="">
+        <img src="{{ product.img_src }}" alt="">
     </div>
 
     <div class="product-price">
         {{ product.price }} nis
     </div>
 
-    <div class="product-reminder">
+    <div class="product-reminder" ng-click="clickReminder(product)">
         <img src="images/Icon-notifications-black-empty-off-200x200.png" height=50px alt="">
         <br>
-        <span>Reminde me later</span> 
+        <span>Remind me later</span> 
     </div>
 
 </div>
