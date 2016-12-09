@@ -92,20 +92,37 @@ angular
     
 })
 
-.controller('adController', ['$scope', function ($scope) {
+.controller('adController', ['$scope', '$state', function ($scope, $state) {
         
+        $scope.currentIndex = 0;
+        $scope.next = function() {
+            if ($scope.currentIndex < $scope.products.length - 1)
+                $scope.currentIndex++;
+        };
+
+        $scope.prev = function() {
+            if ($scope.currentIndex > 0)
+                $scope.currentIndex--;
+            else{
+                go_to_buisness_page();
+            }
+        };
+
+        $scope.go_to_buisness_page= function(){
+            $state.go('business_details');
+        }
 
         $scope.products = [
             {
                 'id' : 0,
                 'img_src': 'graphics%5Cbanners%5Cprezzo-AMPM-crembo.png',
-                'price'  : 4,
+                'price'  : '6 crembos for 4',
                 'remindMe': 'off'
             },
             {
                 'id' : 1,
                 'img_src': 'graphics%5Cbanners%5Cprezzo-AMPM-umbrella-1080x1080.png',
-                'price'  : 18,
+                'price'  : "giant umbrella NIS 18.00",
                 'remindMe': 'on'
             }
         ]

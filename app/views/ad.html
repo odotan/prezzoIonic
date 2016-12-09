@@ -1,15 +1,12 @@
-<div class="product-company">
-    am - pm
-</div>
-
-<div class="product" ng-repeat="product in products">
+<img class="maxw" src="graphics/banners/prezzo-AMPM-small.png" alt="">
+<div class="product" ng-swipe-left="next()" ng-swipe-right="prev()" ng-click="go_to_buisness_page()">
     <div class="product-image">
-        <img src="{{ product.img_src }}" alt="">
+        <img class="maxw" src="{{ products[currentIndex].img_src }}" alt="">
     </div>
 
     <div class="product-price">
-        {{ product.price }} nis
+        <span>{{ products[currentIndex].price }}</span>
     </div>
-
-    <subscribe-button product=product></subscribe-button>
+    <div class="spacer"></div>
+    <subscribe-button product=products[currentIndex]></subscribe-button>
 </div>
