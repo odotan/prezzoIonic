@@ -92,6 +92,11 @@ pre                             { margin-bottom:20px; }
   height: 70px;
 }
 
+.spacer-thin {
+  border: solid black 3px;
+}
+
+
 .product-reminder-unsubscribed{
   background-color: #4eb1cc;
   height: 100px;
@@ -112,4 +117,8 @@ pre                             { margin-bottom:20px; }
 @font-face {
     font-family: "CaviarDreams";
     src: url(/../graphics/fonts/CaviarDreams.ttf) format("truetype");
+}
+.adv-banner {
+    display: block;
+    margin: 2px 0px;
 }
