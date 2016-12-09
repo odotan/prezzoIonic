@@ -77,8 +77,16 @@ pre                             { margin-bottom:20px; }
     max-height: 270px;
 }
 
-.product-reminder{
+.product-reminder-unsubscribed{
   background-color: #4eb1cc;
+  height: 100px;
+  text-align: center;
+  padding-top: 10px;
+  font-family: "CaviarDreams", Verdana, Tahoma;
+}
+
+.product-reminder-subscribed{
+  background-color: black;
   height: 100px;
   text-align: center;
   padding-top: 10px;
