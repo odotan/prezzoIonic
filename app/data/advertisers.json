@@ -14,7 +14,7 @@
     "שם קבוצה מובילה" : "בריאות,רוקחות,קוסמטיקה",
     "קוד פקח" : 2,
     "תאור פקח" : "ליטל",
-    "banner" : "images/advertisers/banners/prezzo-Advertiser-banner-ampm.png"
+    "banner" : "app/graphics/banners/prezzo-Advertiser-banner-ampm.png"
   },
   "Babysitter" : {
     "BusinessName" : "Babysitter",
@@ -31,7 +31,7 @@
     "שם קבוצה מובילה" : "דלק,אנרגיה",
     "קוד פקח" : 3,
     "תאור פקח" : "יואב",
-    "banner" : "images/advertisers/banners/prezzo-Advertiser-banner-babysitter.png"
+    "banner" : "app/graphics/banners/prezzo-Advertiser-banner-babysitter.png"
   },
   "Burgeranch" : {
     "BusinessName" : "Burgeranch",
@@ -48,7 +48,7 @@
     "שם קבוצה מובילה" : "רכב ותעבורה",
     "קוד פקח" : 1,
     "תאור פקח" : "ילנה",
-    "banner" : "images/advertisers/banners/prezzo-Advertiser-banner-burgeranch.png"
+    "banner" : "app/graphics/banners/prezzo-Advertiser-banner-burgeranch.png"
   },
   "Petshop" : {
     "BusinessName" : "Petshop",
@@ -65,7 +65,7 @@
     "שם קבוצה מובילה" : " נופש וספורט",
     "קוד פקח" : 3,
     "תאור פקח" : "יואב",
-    "banner" : "images/advertisers/banners/prezzo-Advertiser-banner-petshop.png"
+    "banner" : "app/graphics/banners/prezzo-Advertiser-banner-petshop.png"
   },
   "Plumber" : {
     "BusinessName" : "Plumber",
@@ -82,7 +82,7 @@
     "שם קבוצה מובילה" : " נופש וספורט",
     "קוד פקח" : 3,
     "תאור פקח" : "יואב",
-    "banner" : "images/advertisers/banners/prezzo-Advertiser-banner-plumber.png"
+    "banner" : "app/graphics/banners/prezzo-Advertiser-banner-plumber.png"
   },
   "QuickWash" : {
     "BusinessName" : "QuickWash",
@@ -99,7 +99,7 @@
     "שם קבוצה מובילה" : "מזון",
     "קוד פקח" : 3,
     "תאור פקח" : "יואב",
-    "banner" : "images/advertisers/banners/prezzo-Advertiser-banner-quickwash.png"
+    "banner" : "app/graphics/banners/prezzo-Advertiser-banner-quickwash.png"
   },
   "Tiger Lilly" : {
     "BusinessName" : "Tiger Lilly",
@@ -116,7 +116,7 @@
     "שם קבוצה מובילה" : " נופש וספורט",
     "קוד פקח" : 1,
     "תאור פקח" : "ילנה",
-    "banner" : "images/advertisers/banners/prezzo-Advertiser-banner-tigerlilly.png"
+    "banner" : "app/graphics/banners/prezzo-Advertiser-banner-tigerlilly.png"
   },
   "4" : {
     "BusinessName" : 4,
