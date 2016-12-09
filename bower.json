@@ -11,11 +11,7 @@
     "angular-touch": "^1.4.0",
     "bootstrap": "^3.3.7",
     "angular-ui-router": "^0.3.2",
-<<<<<<< Updated upstream
     "requirejs" : "^2.3.2"
-=======
-    "requirejs": "^2.3.2"
->>>>>>> Stashed changes
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"
