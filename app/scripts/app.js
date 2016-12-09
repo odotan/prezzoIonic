@@ -20,7 +20,10 @@ angular
             templateUrl: '../views/registrationForm.html',
             controller: 'formController'
         })
-        
+        .state('openpage', {
+            url: '/openpage',
+            templateUrl: '../views/openpage.html'
+        })
         // nested states 
         // each of these sections will have their own view
         // url will be nested (/form/profile)
@@ -62,7 +65,7 @@ angular
        
     // catch all route
     // send users to the form page 
-    $urlRouterProvider.otherwise('/form/profile');
+    $urlRouterProvider.otherwise('/openpage');
 })
 .service('advertisersData', function ($http, $rootScope) {
     // AngularJS will instantiate a singleton by calling "new" on this function
@@ -115,13 +118,13 @@ angular
         $scope.products = [
             {
                 'id' : 0,
-                'img_src': 'graphics%5Cbanners%5Cprezzo-AMPM-crembo.png',
+                'img_src': 'graphics/banners/prezzo-AMPM-crembo.png',
                 'price'  : '6 crembos for 4',
                 'remindMe': 'off'
             },
             {
                 'id' : 1,
-                'img_src': 'graphics%5Cbanners%5Cprezzo-AMPM-umbrella-1080x1080.png',
+                'img_src': 'graphics/banners/prezzo-AMPM-umbrella-1080x1080.png',
                 'price'  : "giant umbrella NIS 18.00",
                 'remindMe': 'on'
             }
