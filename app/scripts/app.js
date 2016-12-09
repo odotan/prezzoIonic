@@ -69,12 +69,20 @@ angular
 
 .controller('adController', ['$scope', function ($scope) {
         
-
+        $scope.currentIndex = 0;
+        $scope.next = function() {
+            if ($scope.currentIndex < $scope.products.length - 1)
+                $scope.currentIndex++;
+        };
+        $scope.prev = function() {
+            if ($scope.currentIndex > 0)
+                $scope.currentIndex--;
+        };
         $scope.products = [
             {
                 'id' : 0,
                 'img_src': 'graphics%5Cbanners%5Cprezzo-AMPM-crembo.png',
-                'price'  : 4,
+                'price'  : '6 crembos for ₪4',
                 'remindMe': 'off'
             },
             {
