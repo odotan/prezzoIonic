@@ -39,6 +39,13 @@ angular
         .state('form.payment', {
             url: '/payment',
             templateUrl: '../views/form-submit.html'
+        })
+
+        // url for viewing ad product.
+        .state('ad', {
+            url: '/ad',
+            templateUrl: '../views/ad.html',
+            controller: 'adController'
         });
        
     // catch all route
@@ -58,5 +65,14 @@ angular
         alert('awesome!');  
     };
     
-});
+})
 
+.controller('adController', ['$scope', function ($scope) {
+        $scope.products = [
+            {
+                'img_src': 'graphics\banners\prezzo-AMPM-crembo.png',
+                'price'  : 4,
+            }
+        ]
+
+    }]);

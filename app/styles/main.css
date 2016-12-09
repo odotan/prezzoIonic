@@ -69,3 +69,16 @@ pre                             { margin-bottom:20px; }
   from  { -webkit-transform:translateX(200%); }
   to    { -webkit-transform: translateX(0); }
 }
+
+/* AD VIEW */
+
+.product-reminder{
+  background-color: #4eb1cc;
+  height: 100px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.product-company{
+  text-align: center;
+}
