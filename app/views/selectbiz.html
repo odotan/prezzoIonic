@@ -1,0 +1,12 @@
+<style>
+    .adv-banner {
+        display: block;
+        margin: 2px 0px;
+    }
+</style>
+<div ng-repeat="adv in advertisers">
+    <!--<a href="#/business/details/{{ adv.BusinessName }}">-->
+    <a ui-sref="business_details">
+        <img class="adv-banner" src="{{ adv.banner }}" />
+    </a>
+</div>
