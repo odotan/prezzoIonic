@@ -104,7 +104,7 @@ angular
             if ($scope.currentIndex > 0)
                 $scope.currentIndex--;
             else{
-                go_to_buisness_page();
+                $scope.go_to_buisness_page();
             }
         };
 
@@ -138,4 +138,7 @@ angular
     $scope.ad = function() {
         $state.go('ad');
     };
+    $scope.product = {
+        'remindMe': 'off'
+    }
 });
