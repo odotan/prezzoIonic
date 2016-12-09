@@ -46,13 +46,38 @@ angular
             url: '/ad',
             templateUrl: '../views/ad.html',
             controller: 'adController'
+        })
+        // url will be /selectbiz
+        .state('selectbiz', {
+            url: '/selectbiz',
+            templateUrl: '../views/selectbiz.html',
+            controller: 'SelectbizCtrl'
+        })
+        // url will be /business_details
+        .state('business_details', {
+            url: '/business_details',
+            templateUrl: '../views/business_details.html',
+            controller: 'BusinessDetailsCtrl'
         });
        
     // catch all route
     // send users to the form page 
     $urlRouterProvider.otherwise('/form/profile');
 })
-
+.service('advertisersData', function ($http, $rootScope) {
+    // AngularJS will instantiate a singleton by calling "new" on this function
+    $rootScope.advertisers = [];
+    this.getData = function() {
+        return $http.get('data/advertisers.json', {cache: true})
+                .then(function(res) {
+                    var advertisers = [];
+                    for (var adv in res.data) {
+                        advertisers.push(res.data[adv]);
+                    }
+                    $rootScope.advertisers = res.data;
+                });
+    };
+  })
 // our controller for the form
 // =============================================================================
 .controller('formController', function($scope) {
@@ -61,9 +86,9 @@ angular
     $scope.formData = {};
     
     // function to process the form
-    $scope.processForm = function() {
-        alert('awesome!');  
-    };
+    // $scope.processForm = function() {
+    //     alert('awesome!');  
+    // };
     
 })
 
@@ -92,5 +117,16 @@ angular
                 'remindMe': 'on'
             }
         ]
-
-    }]);
+}])
+.controller('SelectbizCtrl', function (advertisersData) {
+    advertisersData.getData();
+})
+.controller('BusinessDetailsCtrl', function ($scope, $state, advertisersData) {
+    advertisersData.getData();
+    $scope.selectBiz = function() {
+        $state.go('selectbiz');
+    };
+    $scope.ad = function() {
+        $state.go('ad');
+    };
+});
